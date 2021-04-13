@@ -24,7 +24,7 @@ const App = () => {
   const likePost = postId => {
     setPosts(posts.map((post) => {
       if (post.id === postId) {
-        return {...post, likes: likes + 1};
+        return {...post, likes: post.likes + 1};
       }
       return post;
     }));
